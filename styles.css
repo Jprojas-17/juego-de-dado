@@ -102,6 +102,7 @@ p {
 }
 
 .pointOne {
+    visibility: visible;
     height: 40px;
     width: 40px;
     background-color: aliceblue;
@@ -109,6 +110,7 @@ p {
 }
 
 .pointTwo {
+    visibility: visible;
     height: 40px;
     width: 40px;
     background-color: aliceblue;
@@ -116,11 +118,14 @@ p {
 }
 
 .pointThree {
+    visibility: visible;
     height: 40px;
     width: 40px;
     background-color: aliceblue;
     border-radius: 50px;
 }
+
+
 
 .momo-signature-regular {
     font-family: "Momo Signature", cursive;
