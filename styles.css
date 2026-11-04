@@ -62,6 +62,7 @@ p {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     
 
 }
@@ -73,6 +74,7 @@ p {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
 }
 
@@ -86,19 +88,22 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;
+    
 
 }
 
 .rowTwo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    
 
 }
 
 .rowThree {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .pointOne {
@@ -124,6 +129,59 @@ p {
     background-color: aliceblue;
     border-radius: 50px;
 }
+
+.pointFour {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+.pointFive {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+.pointSix {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+.pointSeven {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+
+.pointEight {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+
+
+.pointNine {
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+
 
 
 
