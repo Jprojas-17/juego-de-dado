@@ -50,6 +50,8 @@ p {
 .dice {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 100px;
 }
 
 .one {
@@ -60,7 +62,13 @@ p {
 
 }
 
+.two {
+    height: 200px;
+    width: 200px;
+    background-color: #EB4C4C;
+    border-radius: 20px;
 
+}
 
 
 
