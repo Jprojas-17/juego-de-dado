@@ -1,0 +1,71 @@
+body {
+    background-color: #25343F;
+}
+
+
+.all {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 50px;
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+h1 {
+    color: #FF9B51;
+    font-family: 'Momo Signature';
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
+p {
+    font-family: 'Momo Signature';
+    font-weight: 900;
+    color: #FF9B51 ;
+}
+
+.dice {
+    display: flex;
+    flex-direction: row;
+}
+
+.one {
+    height: 200px;
+    width: 200px;
+    background-color: #EB4C4C;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+.momo-signature-regular {
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
