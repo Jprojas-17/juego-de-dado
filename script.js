@@ -5,8 +5,11 @@ let diceTwo = document.getElementsByClassName('two');
 //Variable del titulo
 let title = document.querySelector('h1');
 
-//Variable de numero de dado
-let numDice = Math.floor(Math.random() * 8);
+
+function newNumDice() {
+    return Math.floor(Math.random() * 7);
+}
+
 
 function oneDice(dice) {
     let oneRow = dice[0].getElementsByClassName('rowOne')[0];
@@ -117,6 +120,43 @@ function sixDice(dice) {
     threeRow.getElementsByClassName('pointEight')[0].style.visibility = 'hidden';
     threeRow.getElementsByClassName('pointNine')[0].style.visibility = 'visible';
 }
+
+let numberDice = newNumDice();
+
+if (numberDice == 0) {
+    oneDice(diceOne);
+} else if (numberDice == 1) {
+    oneDice(diceOne);
+}else if (numberDice == 2) {
+    twoDice(diceOne);
+}else if (numberDice == 3) {
+    threeDice(diceOne);
+}else if (numberDice == 4) {
+    fourDice(diceOne);
+}else if (numberDice == 5) {
+    fiveDice(diceOne);
+}else if (numberDice == 6) {
+    sixDice(diceOne);
+}
+
+let numberDiceTwo = newNumDice();
+
+if (numberDiceTwo == 0) {
+    oneDice(diceTwo);
+} else if (numberDiceTwo == 1) {
+    oneDice(diceTwo);
+}else if (numberDiceTwo == 2) {
+    twoDice(diceTwo);
+}else if (numberDiceTwo == 3) {
+    threeDice(diceTwo);
+}else if (numberDiceTwo == 4) {
+    fourDice(diceTwo);
+}else if (numberDiceTwo == 5) {
+    fiveDice(diceTwo);
+}else if (numberDiceTwo == 6) {
+    sixDice(diceTwo);
+}
+
 
 
 
