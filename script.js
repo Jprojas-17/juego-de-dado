@@ -165,7 +165,6 @@ if (numberDiceTwo == 0) {
 
 
 
-
 if (numberDice > numberDiceTwo) {
     console.log('Jugador 1 ganó!');
     title.textContent = 'Jugador 1 ganó';
