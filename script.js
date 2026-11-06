@@ -6,11 +6,13 @@ let diceTwo = document.getElementsByClassName('two');
 let title = document.querySelector('h1');
 
 
+//funcion para crear nuevo numero aleatorio
 function newNumDice() {
     return Math.floor(Math.random() * 7);
 }
 
 
+//funciones para que cambien la cara del dado
 function oneDice(dice) {
     let oneRow = dice[0].getElementsByClassName('rowOne')[0];
     let twoRow = dice[0].getElementsByClassName('rowTwo')[0];
@@ -121,8 +123,10 @@ function sixDice(dice) {
     threeRow.getElementsByClassName('pointNine')[0].style.visibility = 'visible';
 }
 
+// variable que contiene primer num random
 let numberDice = newNumDice();
 
+// condiciones para ver que num random toca para llamar la funcion que asigne la carilla del dado
 if (numberDice == 0) {
     oneDice(diceOne);
 } else if (numberDice == 1) {
@@ -139,7 +143,9 @@ if (numberDice == 0) {
     sixDice(diceOne);
 }
 
+// segunda variable de num random
 let numberDiceTwo = newNumDice();
+
 
 if (numberDiceTwo == 0) {
     oneDice(diceTwo);
@@ -156,6 +162,21 @@ if (numberDiceTwo == 0) {
 }else if (numberDiceTwo == 6) {
     sixDice(diceTwo);
 }
+
+
+
+
+if (numberDice > numberDiceTwo) {
+    console.log('Jugador 1 ganó!');
+    title.textContent = 'Jugador 1 ganó';
+} else if (numberDice < numberDiceTwo) {
+    console.log('Jugador 2 ganó!')
+    title.textContent = 'Jugador 2 ganó';
+} else {
+    console.log('Han empatado ;p')
+    title.textContent = 'Han empatado, refresca de nuevo';
+}
+
 
 
 
